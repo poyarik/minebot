@@ -5,8 +5,8 @@ const autoeat = require('mineflayer-auto-eat')
 const GoalBlock = goals.GoalBlock
 
 const bot = mineflayer.createBot({
-    host: 'simba_i_tishka.aternos.me',
-    port: 58552,
+    host: 'SERVER IP HERE',
+    port: SERVER PORT HERE,
     username: 'Gosha'
 })
 
