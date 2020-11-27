@@ -3,8 +3,8 @@ const pathfinder = require('mineflayer-pathfinder').pathfinder
 const collectBlock = require('mineflayer-collectblock').plugin
 
 const bot = mineflayer.createBot({
-    host: 'simba_i_tishka.aternos.me',
-    port: 58552,
+    host: 'SERVER IP HERE',
+    port: SERVER PORT HERE,
     username: 'Gosha'
 })
 
