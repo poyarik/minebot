@@ -55,20 +55,22 @@ const bot = mineflayer.createBot({
 Фильтры можно настраивать в коде.
 
 Чтобы настроить фильтры откройте файл __index.js__ и найдите строчку:
-```const mob = bot.players['FaNtom4k'].entity```
+```js
+const mob = bot.players['FaNtom4k'].entity
+```
 
 Сейчас бот настроен на атаку только игрока с ником __FaNtom4k__. Чтобы он атаковал другого игрока вместо `FaNtom4k` напишите ник игрока.
 
 Также бот может атаковать определённые типы мобов.
 Для этого замените строчку на:
-```
+```js
 const mobFilter = e => e.type === 'mob' && e.mobType === 'Zombie'
 сonst mob = bot.nearestEntity(mobFilter)
 ```
 Теперь бот атакует только зомби. `Zombie` это тип моба которого будет атаковать бот. Вместо `Zombie` можно написать: Pig, Skeleton и т.д.
 
 Или же можно сделать атаку всех мобов:
-```
+```js
 const mobFilter = e => e.type === 'mob'
 сonst mob = bot.nearestEntity(mobFilter)
 ```
@@ -81,7 +83,9 @@ const mobFilter = e => e.type === 'mob'
 Бот преследует игрока.
 Откройте файл.
 В строчке:
-```const mobb = bot.players['Poyarik']```
+```js
+const mobb = bot.players['Poyarik']
+```
 Вместо `Poyarik` впишите ник игрока которого должен преследовать бот.
 
 ## gi.js
@@ -97,7 +101,9 @@ const mobFilter = e => e.type === 'mob'
 ```node find.js```
 
 В этом режиме бот ищет блок. По началу он будет просто стоять. Чтобы он заработал нужно в чат написать:
-```Собери НАЗВАНИЕ БЛОКА```
+```
+Собери НАЗВАНИЕ БЛОКА
+```
 
 Нужно использовать текстовый id блока.
 Бот пойдёт к ближайшему блоку, сломает его.
