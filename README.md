@@ -25,7 +25,7 @@ npm i mineflayer-auto-eat
 
 Теперь нужно настроить файлы.
 Откройте любой из файлов и там найдите сторочки:
-```js
+```node
 const bot = mineflayer.createBot({
     host: 'SERVER IP HERE',
     port: SERVER PORT HERE,
@@ -55,7 +55,7 @@ const bot = mineflayer.createBot({
 Фильтры можно настраивать в коде.
 
 Чтобы настроить фильтры откройте файл __index.js__ и найдите строчку:
-```js
+```node
 const mob = bot.players['FaNtom4k'].entity
 ```
 
@@ -63,14 +63,14 @@ const mob = bot.players['FaNtom4k'].entity
 
 Также бот может атаковать определённые типы мобов.
 Для этого замените строчку на:
-```js
+```node
 const mobFilter = e => e.type === 'mob' && e.mobType === 'Zombie'
 сonst mob = bot.nearestEntity(mobFilter)
 ```
 Теперь бот атакует только зомби. `Zombie` это тип моба которого будет атаковать бот. Вместо `Zombie` можно написать: Pig, Skeleton и т.д.
 
 Или же можно сделать атаку всех мобов:
-```js
+```node
 const mobFilter = e => e.type === 'mob'
 сonst mob = bot.nearestEntity(mobFilter)
 ```
@@ -83,7 +83,7 @@ const mobFilter = e => e.type === 'mob'
 Бот преследует игрока.
 Откройте файл.
 В строчке:
-```js
+```node
 const mobb = bot.players['Poyarik']
 ```
 Вместо `Poyarik` впишите ник игрока которого должен преследовать бот.
